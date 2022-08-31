@@ -13,3 +13,9 @@ type Tag struct {
 	CreatedAt time.Time
 	UpdatedAt time.Time
 }
+
+func (t *Tag) Set(tag *Tag) error {
+	t.Body = tag.Body
+
+	return nil
+}

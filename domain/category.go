@@ -7,3 +7,9 @@ type Category struct {
 	ID   int `gorm:"primaryKey"`
 	Body string
 }
+
+func (t *Category) Set(category *Category) error {
+	t.Body = category.Body
+
+	return nil
+}
