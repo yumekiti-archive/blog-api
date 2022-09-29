@@ -1,5 +1,5 @@
 {
-  "name": "blog-api",
+  "name": "app",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -11,28 +11,20 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "strapi": "3.6.10",
-    "strapi-admin": "3.6.10",
-    "strapi-utils": "3.6.10",
-    "strapi-plugin-content-type-builder": "3.6.10",
-    "strapi-plugin-content-manager": "3.6.10",
-    "strapi-plugin-users-permissions": "3.6.10",
-    "strapi-plugin-email": "3.6.10",
-    "strapi-plugin-upload": "3.6.10",
-    "strapi-plugin-i18n": "3.6.10",
-    "strapi-connector-bookshelf": "3.6.10",
-    "knex": "0.21.18",
-    "sqlite3": "5.0.0"
+    "@strapi/strapi": "4.4.0",
+    "@strapi/plugin-users-permissions": "4.4.0",
+    "@strapi/plugin-i18n": "4.4.0",
+    "better-sqlite3": "7.4.6"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "944d0672-c736-42e9-a706-df0e9397c0e0"
+    "uuid": "da82babf-efe2-473f-b087-5a6d7949f77e"
   },
   "engines": {
-    "node": ">=10.16.0 <=14.x.x",
-    "npm": "^6.0.0"
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
   },
   "license": "MIT"
 }

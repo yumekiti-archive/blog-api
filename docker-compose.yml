@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  app:
+    image: node:lts-alpine
+    container_name: blog-api
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - 1337:1337
+    command: >
+      sh -c "
+        yarn &&
+        yarn develop
+      "
